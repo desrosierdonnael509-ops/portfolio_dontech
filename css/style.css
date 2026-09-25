@@ -27,8 +27,11 @@ header{
     align-items: center;
     padding: 20px 8%;
     background-color: var(--bg-dark);
+    border-bottom: 2px solid white;
 }
-
+.logo img{
+    width: 15%;
+}
 nav ul{
     display: flex;
     list-style: none;
@@ -96,6 +99,10 @@ nav a.active, nav a:hover{
     color:#3b82f6;
 }
 
+.social-links i{
+    color: #fff;
+}
+
 .hero-buttons{
     margin-top: 25px;
     display: flex;
@@ -115,6 +122,12 @@ nav a.active, nav a:hover{
 }
 .hero-image{
     position: relative;
+   
+}
+
+.hero-image img{
+    position: relative;
+   
 }
 
 .yellow-circle{
@@ -124,12 +137,15 @@ nav a.active, nav a:hover{
     border-radius: 50%;
     display: flex;
     align-items: flex-end;
+      overflow: hidden;
+    
 
 }
 
 .yellow-circle img{
     width: 100%;
     object-fit:cover ;
+  
 }
 
 .grid-2-colums{
@@ -253,4 +269,57 @@ nav a.active, nav a:hover{
     font-size: 2rem;
     color: var(--accent-yellow);
     margin-bottom: 15px;
+}
+
+.contact-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 40px;
+    padding: 50px 8%;
+    background-color: var(--bg-dark);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background: #080c13;
+    font-size: 0.8rem;
+    color: var(--text-gray);
+}
+
+.contact-info ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.contact-info li{
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+}
+
+.form-group-row{
+    display: flex;
+    gap:15px;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #2d3748;
+    background-color: #1a202c;
+    color: #fff;
+}
+
+.text-red{
+    color: #e53e3e;
 }

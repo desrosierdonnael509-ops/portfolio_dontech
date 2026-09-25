@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="logo">
-            
+            <a href="#accueil"> <img src="image/dontech.png" alt=""></a>
         </div>
     
     <nav>
@@ -24,7 +24,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <a href="cv.pdf" class="btn btn-yellow" Download><i class="fa-solid fa-download">Telechager CV</i></a>
+    <a href="image/CV.pdf" class="btn btn-yellow" Download><i class="fa-solid fa-download">Telechager CV</i></a>
 </header>
 
 
@@ -65,7 +65,7 @@
         <li><a href="tel:43347926"><i class="fa-solid fa-enveloppe"></i>+50943347926</a></li>
          </ul>
 
-         <a href="cv.pdf" class="btn-dark" download> <i class="fa-solid fa-download"></i> Téléchager notre profil</a>
+         <a href="image/CV.pdf" class="btn-dark" download> <i class="fa-solid fa-download"></i> Téléchager notre profil</a>
     </div>
     <div id="competences" class="skill-card">
         <h3>Nos Expertises</h3>
@@ -138,7 +138,7 @@
             </div>
         </div> 
           <div class="project-card">
-            <img src="/image/hopital.png" alt="Mon Portfolio">
+            <img src="image/portfolio.png" alt="Mon Portfolio">
             <div class="project-content">
                 <h4>Plateforme DonTech</h4>
                 <p>Site officiel présentant les services de l'entreprise.</p>
@@ -149,7 +149,7 @@
         </div> 
 
          <div class="project-card">
-            <img src="/image/hopital.png" alt="site hopitale">
+            <img src="/image/sitehopital.png" alt="site hopitale">
             <div class="project-content">
                 <h4>Gestion de l'Hopitale</h4>
                 <p>Système de gestion des patients en PHP et MySQL.</p>
@@ -204,9 +204,31 @@
 <section id="contact" class="contact-section">
     <div class="contact-info">
         <h3>Contactez DonTech</h3>
-        <p>Vous avez un projet en tête ou besoins de nos services? </p>
-        </div>
+        <p>Vous avez un projet en tête ou besoins de nos services?Écrivez-nous!</p>
+       
+        <ul>
+            <li><i class="fa-solid fa-envelope"></i> desrosierdonnael509@gmail.com</li>
+            <li><i class="fa-solid fa-phone"></i>+50943347926</li>
+            <li><i class="fa-solid fa-location-dot"></i>Cayes,Haiti</li>
+        </ul>
+         </div>
+
+         <form class="contact-form"action="">
+            <div class="form-group-row">
+                <input type="text" placeholder="Votre nom" required>
+             <input type="email" name="" id="" placeholder="Votre email" required>
+            </div>
+
+            <input type="text" name="" id="" placeholder="Sujet" required>
+            <textarea placeholder="Votre message..." rows="5" id=""required></textarea>
+            <button type="submit" class="btn btn-dark"><i class="fa-solid fa-paper-plane"></i>Envoyer le message</button>
+         </form>  
 </section>
+
+<footer>
+    <p>&copy;2026DonTech. Tous droits réservés</p>
+    <p>Concu avec <i class="fa-solid fa-heart text-red"></i> et passion</p>
+</footer>
 
 </body>
 </html>
