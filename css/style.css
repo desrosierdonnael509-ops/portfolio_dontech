@@ -21,33 +21,43 @@ body{
     line-height: 1.6;
 }
 
-header{
+header {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 8%;
-    background-color: var(--bg-dark);
-    border-bottom: 2px solid white;
+    padding: 15px 8%;
+    background-color: rgba(13, 19, 29, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
 }
-.logo img{
-    width: 15%;
+
+.logo img {
+    max-height:70px;
+    width: auto;
+    display: block;
+    background:#fff;
+    border-radius: 20px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     list-style: none;
-    gap:20px;
+    gap: 25px;
 }
 
-nav a{
+nav a {
     color: var(--text-white);
     text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3 ease;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-nav a.active, nav a:hover{
+nav a.active, nav a:hover {
     color: var(--accent-yellow);
-
 }
 
 .btn{
@@ -66,14 +76,25 @@ nav a.active, nav a:hover{
 
 .btn-yellow{
     background-color: var(--accent-yellow);
-    color: #000;
+    color: #fff;
+    padding: 10px;
+      text-decoration: none;
+  
 }
+
+
 
 .btn-outline{
     border:1px solid var(--text-white);
-    color: var(--text-white);
+    color: var(--accent-yellow);
+    padding: 10px;
+    text-decoration: none;
+  
 }
 
+.btn-yellow:hover{
+    transition:transform 0.3s ease;
+}
 .btn-dark{
     background-color:#1a2332;
     color:var(--text-white)
@@ -103,6 +124,9 @@ nav a.active, nav a:hover{
     color: #fff;
 }
 
+.social-links i:hover{
+    color: var(--accent-yellow);
+}
 .hero-buttons{
     margin-top: 25px;
     display: flex;
@@ -143,7 +167,7 @@ nav a.active, nav a:hover{
 }
 
 .yellow-circle img{
-    width: 100%;
+    width: 90%;
     object-fit:cover ;
   
 }
@@ -298,6 +322,15 @@ footer{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.contact-info a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-info a:hover{
+color:var(--accent-yellow);
 }
 
 .contact-form{
