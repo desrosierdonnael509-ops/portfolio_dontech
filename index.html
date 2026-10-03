@@ -213,6 +213,27 @@
 
     <!-- Script JavaScript pou fè Meni Hamburger a mache -->
     <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Anpeche paj la reload
+
+    // Rekipere valè nan fòmilè a
+    const nom = document.getElementById('nom').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const sujet = document.getElementById('sujet').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    const telephone = "50943347926";
+
+    // Formatage mesaj la pou WhatsApp
+    const texteMesaj = `Bonjour, je suis *${nom}* (${email}).\n\n*Sujet:* ${sujet}\n*Message:* ${message}`;
+
+    // Kreye lyen an ak encodeURIComponent pou evite pwoblèm ak karaktè espesyal yo
+    const urlWhatsApp = `https://wa.me/${telephone}?text=${encodeURIComponent(texteMesaj)}`;
+
+    // Ouvri WhatsApp nan yon nouvo tab
+    window.open(urlWhatsApp, '_blank');
+});
+        
         const menuToggle = document.getElementById('mobile-menu');
         const navMenu = document.querySelector('nav');
         const menuIcon = menuToggle.querySelector('i');
